@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>devGinu</title>
+    <meta charset ="UTF-8">
+    <meta name="author" content="Ginushanth Suriyakumaran">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio">
+    <meta name="keywords" content="ginu,Ginushanth, Ginushanth Suriyakumaran, Ginu Suriyakumaran">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/indexMain.css?version=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripting/indexMain.js?version=1"></script>
+</head>
+
+<!-- The onload character count is primarily for the textarea for the form, if the user types something in and refreshes the page, the remaining character count
+should display however many characters are left rather than 1000!-->
+<body onload="character_count();">
+
+<!-- Navigation Modal!-->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="row">
+            <div class="col-xs-12" id="modal-AI-row">
+                <img id="modal-AI-pic" src="img/AI.gif" width="200" height="200">
+            </div>
+       </div>
+       <div class="row">
+            <div class="col-xs-12">
+                <h1 id="modal-AI-speech">Where would you like to go?</h1>
+            </div>
+       </div>
+       <div class="row" id="menu-wrapper">
+            <div class="col-xs-12">
+                <ul id="menu">   
+                    <li><a href="#about-me" class="menu-button">About Me</a></li>
+                    <li><a href="#my-skills" class="menu-button">What I Provide</a></li>
+                    <li><a href="#DISA" class="menu-button">DISA</a></li>
+                    <li><a href="#scotiabank-title" class="menu-button">You're Richer Than You Think</a></li>
+                    <li><a href="#array-title" class="menu-button">The Array Experience</a></li>
+                    <li><a href="#resume" class="menu-button">Downloads</a></li>
+                    <li><a href="#contact" class="menu-button">Contact Me</a></li>
+                </ul>
+            </div>
+       </div>   
+       <div class="row">
+            <div class="col-xs-12">
+                <h1 id="LematWorks">Visit <a href="https://lematworks.tumblr.com/" target="blank">LematWorks</a> for more designs</h1>
+            </div>
+       </div>
+
+    </div>
+</div>
+
+
+
+<!--********************NOTE*************** SLIDE means this div will be animated, top means the top position of the div will be used as a reference to
+animate, slideRight or slideDown means slideRight animation or slideDown animation-->
+
+
+
+<!-- Intro section!-->
+<div class="container-fluid" id="beginning">
+    <div class="row">
+        <div class="col-xs-12" id="AI-row">
+            <img  id="AI-pic" src="img/AI.gif">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 id="AI-speech">Hello. (1/4)</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" id="skip-intro-wrapper">
+            <h1 id="skip-intro">Skip</h1>
+        </div>
+    </div>
+</div>
+<!--Content wrapper is the entire document other than the intro section!-->
+<div class="container-fluid" id="content-wrapper">
+    <div id="about-me" class="container-fluid">
+        <div class="row" id="about-me-photo-row">
+            <div class="col-xs-12">
+                <img src="img/ginu.png" alt="ginu's photo" id="ginu-photo">
+                <h1 id="ginu-quote"></h1>
+            </div>
+        </div>
+        <div class="row" id="about-me-content">
+            <div class="col-xs-12 col-sm-2"></div>
+            <div class="col-xs-12 col-sm-8 slide top slideRight">   
+
+                <p>Hi my name is Ginushanth Suriyakumaran but I go by Ginu since my full name is almost as long as the alphabet. I am a 3rd year Computer Engineering and Management student at McMaster University. When I'm not spending time on my education, you can find me doing things such as binge watching T.V shows, contemplating life, sleeping for 12-13 hours, reading memes, learning new things and the list goes on. When it comes down to learning, I like to learn things that allow my ideas to take form of some sort. My mind is like the universe, constantly <span class="emphasis">growing</span>, but with ideas that are too far to reach with the current knowledge capacity. That's why I learn and am always willing to learn in order for me to increase this capacity and ultimate achieve my long-term goal. The ultimate goal is to make what people might refer to as a 'stupid idea' to a 'stupid idea' that made millions of dollars. At the end of the day, my life is like a journey, everything that I do brings me a step closer to this ultimate goal. So far I have obtained knowledge in <span class="emphasis">engineering</span> and <span class="emphasis">business</span>, the mindset of an <span class="emphasis">innovator</span> and the personality/people skills of an <span class="emphasis">entrepreneur</span>. However, I still have a long way to go before I reach my destination.</p>
+                <br>
+              <p> Will you watch me as I travel through my journey or will you join and help me along through my journey?</p>
+            </div>
+            <div class="col-xs-12 col-sm-2"></div>
+        </div>
+    </div>
+    <!--Skills Section!-->
+    <div class="container-fluid" id="my-skills">
+        <div class="row slide top slideDown">
+            <div class="col-xs-12">
+                <h1 id="my-skills-header">What I can PROVIDE</h1>
+            </div>
+        </div>
+        <div class="row" id="skills-top-row">
+            <div class="col-xs-12 col-sm-1"></div>
+            <div class="col-xs-12 col-sm-3 slide top slideRight" id="programming-skills">
+                <i class="material-icons">computer</i>
+                <p>Years of programming experience. Languages include: HTML, CSS, JavaScript, Jquery, PHP, mySQL, Java, C, C#, Python, Visual Basic &amp; Matlab.</p>
+            </div>
+            <div class="col-xs-12 col-sm-3 slide top slideRight" id="circuit-skills">
+                <img class="icon icons8-Circuit" width="75" height="75" src="img/circuit1.png">       
+                <p>Ability to create circuits to measure different electromagnetic quantites using resistors, operational amplifiers, wires, breadboards, oscilloscopes and function generators.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 slide top slideRight" id="education-skills">
+                <i class="fa fa-graduation-cap"></i>           
+                <p>3 Years of Computer Engineering and Management knowledge from McMaster University and Golden Key International Honour Society Certificate (top 15% of class). Graduate with distinction from R.H King Academy.</p>
+            </div>
+            <div class="col-xs-12 col-sm-1"></div>
+        </div>
+        <div class="row" id="skills-top-row">
+            <div class="col-xs-12 col-sm-2"></div>
+            <div class="col-xs-12 col-sm-3 slide top slideDown" id="management-skills">
+                <i class="fa fa-group"></i>           
+                <p>Management experience gained by being the president of R.H King's Safe School Council for 2 years. Able to work independently &amp; in a team. Strong leadership skills.</p>
+            </div>
+            <div class="col-xs-12 col-sm-3 slide top slideDown" id="analysis-skills">
+                <img src="img/brain.png" width="75" height="75"></i>           
+                <p>Powerful analytical &amp; problem solving skills. Logical &amp; creative thinker. Ability to work under pressure. </p>
+            </div>
+            <div class="col-xs-12 col-sm-1"></div>
+
+        </div>
+    </div>
+    <!-- work experience section!-->
+    <div class="container-fluid" id="work-experience">
+        <div class='container-fluid' id="DISA">
+            <div class="row">
+                <h1>Degroote's Information Systems Association</h1>
+                <hr class="mini-hr" id="DISA-hr">
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 id="DISA-title">Vice President of Technological Affairs</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>In my 3rd year of university (2017-2018), I joined an organization called DISA. This organization prides itself on promoting the field of information technology to McMaster students. As an executive, I participate in group meetings and help organize networking events. Not only that, I am in charge of running workshops that teach students a variety of programming langauges that the workforce will find valuable. Also, I am the lead front end developer that was tasked to redesign the existing website to make it look more professional and mobile-friendly. You can see the newly designed website by clicking the link below.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <img src="img/disa/disa-background.jpg" id="DISA-website">
+                    <p>To view the website in full click <a href="about_us.html" target="_blank">here</a></p>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <img src="img/DISA-team.jpg" id="DISA-team-photo">
+                    <p>The DISA team</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row slide top slideDown">
+            <h1 id="scotiabank-title">You're Richer Than You Think.</h1>
+            <hr class="mini-hr">
+        </div>
+        <!-- scotiabank business systems analyst section!-->
+        <div id="scotiabank">
+            <div class="row slide slideRight top">
+                <div class="col-xs-12">
+                    <h1>Business Systems Analyst</h1>
+                </div>
+            </div>
+            <div class="row slide slideDown top">
+                <div class="col-xs-12">
+                    <p>During the four month co-op term I had at Scotiabank in the summer of 2017, I was assigned to one of the labs under the Payments and Technology department. The project underway was to replace an existing legacy system by implementing a more efficient file transferring system that incorporated track and trace. The new system would incorporate all existing functionalities in the legacy system and provide clients with a more reliable payment processing service. Below is a list of things I did at Scotiabank: </p>
+                </div>
+            </div>
+            <div class="row slide top slideRight" id="agile">
+            <div class="col-xs-12 col-sm-1"></div>
+            <div class="col-xs-12 col-sm-1">
+                <img src="img/agile.png" alt="agile logo" id="agile-icon" width="100" height="100" class="scotia-icons">
+            </div>
+            <div class="col-xs-12 col-sm-1"></div>
+
+            <div class="col-xs-12 col-sm-8">
+                <p class="scotia-icon-content">Worked with a cross functional team consisting of developers, quality assurance testers, business system analysts &amp; solution architects in an agile environment that utilizes Scrum and Kanban.</p>
+            </div>
+            <div class="col-xs-12 col-sm-1"></div>
+        </div> 
+         <div class="row slide top slideRight" id="coding">
+            <div class="col-xs-12 col-sm-1"></div>
+            <div class="col-xs-12 col-sm-1">
+                <img src="img/coding.png" alt="coding icon" id="coding-icon" width="100" height="100" class="scotia-icons">
+            </div>
+            <div class="col-xs-12 col-sm-1"></div>
+
+            <div class="col-xs-12 col-sm-8">
+                <p class="scotia-icon-content">Analyzed the source code for portions of the legacy system's functionality so that all existing behaviours are incorporated into the new integrated system requirements. Retrieved a set of seed data from the legacy system by sending test files to the corresponding server, while also creating a set of trivial test scenarios as a foundation for quality assurance testers to utilize for each system requirement. Obtained all the unique variations in the data input file names that consisted of a combiniation of scripts, strings &amp; literals, so that testing covered all possible combinations.</p>
+            </div>
+            <div class="col-xs-12 col-sm-1"></div>
+        </div>  
+        <div class="row slide top slideRight" id="stories">
+            <div class="col-xs-12 col-sm-1"></div>
+            <div class="col-xs-12 col-sm-1">
+                <img src="img/stickynotes.png" alt="sticky notes" id="stickynotes-icon" width="100" height="100" class="scotia-icons">
+            </div>
+            <div class="col-xs-12 col-sm-1"></div>
+
+            <div class="col-xs-12 col-sm-8">
+                <p class="scotia-icon-content">Evaluated system requirements &amp; gathered information to create user story definitions &amp; acceptance criterias. Provided references for all user stories by articulating &amp; maintaining documentation on Confluence &amp; Jira. Participated in story mapping sessions &amp; helped create physical &amp; digital story maps. </p>
+            </div>
+            <div class="col-xs-12 col-sm-1"></div>
+        </div>  
+        <div class="row slide top slideRight" id="sequence-diagrams">
+            <div class="col-xs-12 col-sm-1"></div>
+            <div class="col-xs-12 col-sm-1">
+                <img src="img/architecture.png" alt="sequence diagram icon" id="sequence-diagrams-icon" width="100" height="100" class="scotia-icons">
+            </div>
+            <div class="col-xs-12 col-sm-1"></div>
+            <div class="col-xs-12 col-sm-8">
+                <p class="scotia-icon-content">Learned the architecture of the bank's various interconnected systems being used to onboard clients, and provide them access to transfer payment files to the bank so that the transactions within the payment file can be validated &amp; processed for money release. Also learned the end to end flow of a payment file being passed into the primary systems that are apart of the interconnected system. Using this information learned, sequence diagrams were created for individual systems and a portion of their functionalities.</p>
+            </div>
+            <div class="col-xs-12 col-sm-1"></div>
+        </div>  
+        <div class="row">
+            <div class="col-xs-12 slide top slideDown">
+                <h3>Future Leader's Challenge</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 slide top slideDown">
+                <p>The objective of this competition was to challenge one of the bank's internal or external processes by figuring out how it can be improved to increase efficiency/productivity and/or marketability depending on what processes are being challenged. Based on statistical evidence gathered through conducting surveys among our labs, we observed that majority of the employees felt that the bank took way too long to onboard them and provide them the necessities to start working. As a team of four we called our self 'Breaking Bank' and decided to break down and improve the internal onboarding process. Through hours of research and meetings with department leaders involved in the onboarding process, we consolidated our information into a professional and informative PowerPoint that was submitted.</p>
+            </div>
+        </div>
+        <div class="row slide top slideRight" id="the-team">
+            <div class="col-xs-12">
+                <h3><span class="dash">&mdash;&mdash;&nbsp;&nbsp;</span>BREAKING BANK<span class="dash">&mdash;&mdash;</span></h3>
+            </div>
+        </div>
+        <div class="row" id="team-photos">
+            <div class="col-xs-12 col-sm-3 slide top slideRight" id="jude">
+                <img class="photo" src="img/jude1.jpg" alt="jude's photo">
+                <div class="content">
+                    <h3 class="team-member-name">Jude Boaz</h3>
+                    <hr class="card-hr">
+                    <h4 class="team-member-position"><i class="material-icons">work</i></button>Business Systems Analyst</h4>
+                    <h5 class="team-member-school"> <i class="material-icons">school</i></button>Seneca College</h5>
+                    <h5 class="team-member-degree"> <i class="fa fa-book"></i>Bachelor of Technology</h5>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 slide top slideRight" id="agam">
+                    <img class="photo" src="img/agam1.jpg" alt="agams's photo">
+                    <div class="content">
+                    <h3 class="team-member-name">Agam Dogra</h3>
+                    <hr class="card-hr">
+                    <h4 class="team-member-position"><i class="material-icons">work</i></button>Business Systems Analyst</h4>
+                    <h5 class="team-member-school"> <i class="material-icons">school</i></button>Seneca College</h5>
+                    <h5 class="team-member-degree"> <i class="fa fa-book"></i>Bachelor of Technology</h5>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 slide top slideRight" id="ginu">
+                <img class="photo" src="img/ginu1.jpg" alt="ginu's photo">
+                <div class="content">
+                    <h3 class="team-member-name">Ginu Suriyakumaran</h3>
+                    <hr class="card-hr">
+                    <h4 class="team-member-position"><i class="material-icons">work</i></button>Business Systems Analyst</h4>
+                    <h5 class="team-member-school"> <i class="material-icons">school</i></button>McMaster University</h5>
+                    <h5 class="team-member-degree"> <i class="fa fa-book"></i>B.Eng in Computer &amp; Management</h5>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 slide top slideRight" id="sarthak">               
+                <img class="photo" src="img/sarthak4.jpg" alt="sarthak's photo">
+                <div class="content">
+                    <h3 class="team-member-name">Sarthak Bali</h3>
+                    <hr class="card-hr">
+                    <h4 class="team-member-position"><i class="material-icons">work</i></button>Business Analyst</h4>
+                    <h5 class="team-member-school"> <i class="material-icons">school</i></button>University of Waterloo</h5>
+                    <h5 class="team-member-degree"> <i class="fa fa-book"></i>Bachelor of Environmental Studies</h5>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-- ARRAY Warehousing associate!-->
+    <div class="row slide top slideDown">
+        <h1 id="array-title">The ARRAY Experience.</h1>
+        <hr class="mini-hr">
+    </div>
+        <div id="array">
+            <div class="row  slide top slideRight">
+                <div class="col-xs-12">
+                    <h1>Warehousing Associate</h1>
+                </div>
+            </div>
+            <div class="row slide top slideDown">
+                <div class="col-xs-12">
+                    <p>In the summer of 2015, and 2016 I worked at a company called Array Canada as a warehousing associate. Array Canada is a company that sells cosmetic displays &amp; fixtures. This job was not focused on building technical skills but rather it introduced me to the work force and enhanced my transferable skills. In 2015 as a high school graduate, I worked alongside the team co-ordinator, department team and helped out with packaging, assembly &amp; product refining. The department team consisted of over 30 employees with various occupations such as CNC machine operators, assembly line workers, welders and much more. In 2016, I was asked to work in the same department by the department leader because of the exceptional work I displayed in the previous summer. I worked in the same position as before but was put in charge of the packaging team which consisted of only 5 people.
+                    Here is a list of things that I did/learned at my time at Array:</p>
+                </div>
+            </div>
+            <div class="row slide top slideRight">
+                <div class="col-xs-12 col-sm-1"></div>
+                <div class="col-xs-12 col-sm-7">
+                    <ul>
+                        <li>Trained new employees to the packaging area</li>
+                        <li>Sand, buff, edge finish materials with the respective machinery</li>
+                        <li>Packaging expensive merchandise</li>
+                        <li>Made phone calls to all US Sephora stores to inform them about a defect; recorded responses in an excel spreadsheet</li>
+                        <li>Assembling large-scale merchandise</li>
+                        <li>Product assembly life-cycle</li>
+                        <li>Put in charge of the manufacturing of a special order</li>
+                        <li>Applied heat to raw materials to bend and shape them</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4"></div>
+            </div>
+            <div class="row slide top slideRight">
+                <div class="col-xs-12">
+                    <p>Never heard of the company? Visit their website<a href="http://arraymarketing.com/" target="blank"> here.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- download resume or check gitHub!-->
+    <div class="container-fluid" id="resume">
+        <div class="row">
+            <div class="col-xs-12 slide top slideDown">
+                <h3>Download my resume or check out other work on GitHub.</h3>
+                <hr class="mini-hr">
+            </div>
+        </div>
+        <div class="row slide top slideDown">
+            <div id="resume-links">
+                <a href="downloads/Ginu_Resume.docx" class="download">Resume</a>
+                <a href="https://github.com/Ginushanth" target="blank" class="download">GitHub&nbsp;</a>
+             </div>
+        </div>
+    </div>
+    <!-- contact section and form!-->
+    <div class="container-fluid" id="contact">
+        <div class="row slide top slideRight" id="contact-info-header">
+            <div class="col-xs-12">
+                <h1>Contact Me</h1>
+               
+            </div>
+        </div>
+        <div class="row slide top slideRight" id="contact-info">
+            <div class="col-xs-12 col-sm-4" id="email">
+                <i class="material-icons">email</i>
+                <br>
+                <p>Email: suriyakg@mcmaster.ca</p>
+            </div>
+            <div class="col-xs-12 col-sm-4"  id="phone">
+                <i class="material-icons">phone</i>
+                <br>
+                <p>Telephone: 647-459-2478</p>
+            </div>
+            <div class="col-xs-12 col-sm-4" id="linkedin">
+                <i class="fa fa-linkedin-square"></i>
+                <br>
+                <p><a href="https://www.linkedin.com/in/ginushanth-suriyakumaran-299228131/" target="blank">LinkedIn</a></p>
+            </div>
+        </div>
+        <div class="row" id="form-headers">
+            <div class="col-xs-12 slide top slideDown">
+                <h3><span class="dash">&mdash;&mdash;&nbsp;&nbsp;</span>Leave a <span>MESSAGE</span><span class="dash">&mdash;&mdash;</span></h3>
+                <h3><small id="required-header">*Required Field</small></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 slide top slideRight" id="form">
+                <form>
+                    <h2 id="name-header"><span class="required">*</span>Name:&nbsp;&nbsp;&nbsp;</h2> 
+                    <input type="text" name="name" maxlength="40" id="nameInput" class="animateInput">
+                    <p class="error" id="nameErr"></p>
+                    <br>
+
+                    <h2 id="email-header">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                    <input  type="text" name="email" maxlength="100" id="emailInput" class="animateInput">
+                    <p class="error" id="emailErr"></p>
+                    <br>
+
+                    <h2 id="company-header">Company:</h2>
+                    <input type="text" name="company" maxlength="40" id="companyInput" class="animateInput">
+                    <br>
+
+                    <h2 id="comments-header"><span class="required">*</span>Comments:</h2>
+                    <textarea onkeyup="character_count()" name="comments" maxlength="1000" id="commentsInput" class="animateInput"></textarea>
+                    <p class="error" id="commentsErr"></p>
+                    <small id="character_count">Characters left: <span id="characters_remaining">1000</span></small>   
+                    <p id="submitted"></p>
+                    <br>
+                    <br>
+                    <input type="submit" value="SUBMIT" name="formSubmitted" id="submit-button">   
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid" id="footer">
+        <h4>&copy; Ginushanth Suriyakumaran. All rights reserved.</h4>
+    </footer>
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,920 @@
+/*------------CLASSES APPLIED TO MAJORITY OF THE DOCUMENT---------------*/
+body,html{
+    height:100%;
+    width:100%;
+    background-color: white;
+
+}
+/* Declare font style and color*/
+h1,small,h3,h2,h4{
+    font-family: 'Quicksand', sans-serif;   
+    color:black;
+}
+
+p,ul{
+    font-size:19px;
+    font-family: 'Quicksand', sans-serif; 
+    color:black;    
+}
+hr{
+    border-color: gray;   
+}
+.container-fluid{
+    width:100%;
+}
+.slideRight{
+    position:relative;
+    transform:translateX(-100%);
+    opacity:0 !important;
+}
+.slideDown{
+    position:relative;
+    opacity:0 !important;
+    transform:translateY(-50%);
+}
+.slide{
+    transition:opacity 1s, transform 1s, margin 1s, padding 1s !important;
+}
+
+
+/*NAVIGATION MODAL*/
+.modal{
+    display:block;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    position:fixed;
+    padding-top:10%;
+}
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus {
+    color: yellow;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content{
+    transition:0.4s;
+    color:black !important;
+    border:1px solid white;
+}
+
+
+
+#modal-AI-pic{
+    position:relative;
+    margin:auto;
+    width:100px;
+    height:100px;
+    display:block;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+#myModal{
+    display:none;
+}
+#myModal h1{
+    color:white;
+    text-align: center;
+}
+
+#menu{
+    list-style: none;
+    height:auto;
+    margin:0;
+    padding:0;
+    background-color: white;
+}
+#menu li a {
+    color:black;
+    text-decoration: none;
+    display:block;
+    width:100%;
+    height:100%;
+    padding: 8px;
+}
+#myModal h1 a{
+    text-decoration: none !important;
+}
+#menu li{
+    position: relative;
+    width:100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+#menu li:hover{
+    background-color: gray;
+    color:inherit !important;
+}
+
+
+
+/* AI Introduction*/
+
+/*-----MIGHT NEED TO PUT BACK
+#AI-row{
+    position:fixed !important; 
+    width:100%; 
+    height:auto;
+    background-color: black;
+    z-index:1 !important;
+}
+*/
+/*The AI-pic's relative location will be overridden by jquery*/
+#AI-pic{
+    height:400px;
+    width:400px;
+    position:relative;
+    left:40%;
+    display:none;
+    transition:transform 2s;
+    z-index: 1!important;
+}
+/*The AI-speech's relative location will be overridden by jquery*/
+#AI-speech{
+    color:white;
+    position:relative;
+    padding-top:50px;
+    width:auto;
+    z-index: 2!important;
+    display:none;
+    margin:auto;
+    text-align: center;
+}
+#skip-intro{
+    color:white;
+    text-align: right;
+}
+#skip-intro-wrapper{
+    position:absolute;
+    bottom:0;
+}
+#beginning{
+    height:100%;
+    background-color: black;
+    width:100%;
+    z-index: 1;
+    position:fixed;
+    transition:transform 2s;
+}
+/*Wrapper for the remaining of the document*/
+#content-wrapper{
+    width:100%;
+    margin:0;
+    background-color: white;
+    padding:0;
+    height:0;
+    overflow-y:hidden;
+    z-index: -1;
+}
+
+
+/*---------------------ABOUT ME SECTION--------------------*/
+#ginu-photo{
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    border:2px solid black;
+    background-color: white;
+    display: block;
+    position:relative;
+    margin:auto;
+    left:0;
+    right:0;
+    bottom:0;   
+    top:0;
+}
+
+#ginu-quote{
+    color:black;
+    height:auto;
+    font-family: 'Saira', sans-serif !important;
+}
+#about-me-photo-row{
+    background-color: white!important;
+}
+#about-me{
+    height:auto;
+    background-color: #fcfcfc !important;
+    padding-top:50px;
+}
+#about-me h1{
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+#about-me-content{
+    word-wrap: break-word;  
+    padding-top:20px;
+    padding-bottom:40px;
+    background-color: #F5F5F5!important;
+}
+.emphasis{
+    color:black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:22px!important;
+
+}
+/*-------SKILLS SECTIONS-------*/
+#my-skills{
+    height:auto;
+    background-color: #fcfcfc;
+    margin-bottom: 100px;
+}
+#my-skills-header{
+    text-align: center;
+    padding-bottom:10px;
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+#my-skills hr{
+    padding-bottom:20px;
+}
+#my-skills i{
+    font-size:75px;
+    position:relative;
+    left:35%;
+    color:black;
+}
+#my-skills img{
+    position:relative;
+    left:35%;
+}
+#my-skills p{
+    padding-top:25px;
+    color:black;
+    padding-bottom:10px;
+}
+
+#education-skills,#circuit-skills{
+    margin-left:4%;
+}
+#education-skills{
+    padding-right:5%;
+}
+#management-skills,#analysis-skills{
+    margin-left:5%;
+}
+
+/*-----------------------WORK EXPERIENCE SECTION----------------------*/
+/*DISA*/
+#DISA-hr{
+    border-color:#3AAFA9;
+}
+#DISA-website{
+    height:400px;/*image's height gets overriden by jquery*/
+    width:100%;
+    border:1px solid gray;
+}
+#DISA h1{
+    text-align: center;
+    color:#3AAFA9 !important;
+}
+#DISA-title{
+    text-align: left !important;
+}
+#DISA-team-photo{
+    width:100%;
+    height:100%;
+}
+#scotiabank,#array
+{
+    height:auto;
+    padding-bottom:100px;
+}
+/* scotiabank icon and their associative content */
+.scotia-icons{
+    border-radius: 50%;
+    width:130px;
+    height:130px;
+}
+#agile
+{
+    margin-top:40px;
+}
+#agile p{
+    padding-top:25px;
+}
+#stories p{
+    padding-top:20px;
+}
+#sequence-diagrams p{
+    padding-top:15px;
+}
+#agile,#coding,#sequence-diagrams,#stories
+{
+    margin-bottom:20px;
+}
+#coding-icon{
+    margin-bottom:15px;
+}
+.scotia-icon-content{
+    height:auto
+}
+/*--------Scotiabank-------------*/
+
+/*Meeting the team header*/
+#the-team h3{
+    text-align: center; 
+    font-family: 'Quicksand', sans-serif;   
+
+}
+/*team block*/
+#the-team, #team-photos{
+    background-color:#F8F8F8;
+    padding-bottom:10px;
+}
+/*Enable margins of 1%*/
+#team-photos .col-sm-3
+{
+    width:24%;
+    padding:0;    
+}
+/*The actual photos*/
+.photo
+{
+    width:100%;
+    height:220px;   
+    padding:15px;
+    outline-offset:-15px;
+    outline:2px solid gray;
+    background-color:white; 
+}
+/*Horizontal rule under team member name*/
+.card-hr{
+    width:30%;
+    border-bottom:1px solid red;
+}
+/*Each individual card*/
+#ginu,#agam,#sarthak,#jude
+{
+    margin-left:0.5%;
+    background-color:white;
+}
+/*Each line of the card except name*/
+.team-member-position,.team-member-school,.team-member-degree{
+    text-align: left !important;
+    padding-left:13%;
+    font-size:15px;
+}
+.team-member-name{
+    font-size:20px;
+}
+#team-photos i{
+    padding-right:10px;
+    font-size:25px;
+}
+/*Allows some space in the left and right*/
+#jude{
+    margin-left:1%;
+}
+#sarthak{
+    margin-right:3px;
+}
+/*Future leader title header*/
+#scotiabank h3{
+    color:red;
+}
+#scotiabank h1{
+    color:red;
+}
+/*Intro title to each section of work-experience*/
+#scotiabank-title, #array-title
+{
+    color:black;
+    text-align: center;
+    background-color: white;
+    height:auto;
+    width:100%;
+    padding-top:50px;
+    padding-bottom:40px;
+    margin:0;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.mini-hr{
+    width:10%;
+}
+
+#array h1
+{
+    color:gray;
+}
+
+
+
+/*------------Download Resume and GitHub section-----------*/
+#resume{
+    min-height:100px;
+    height:auto;
+    background-color: #F8F8F8;
+
+}
+#resume h3{
+    color:black;
+    text-align: center;
+    margin-bottom:40px;
+}
+.download:link{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-left:10px;
+    font-family: 'Quicksand', sans-serif !important;
+    background-color: white;
+    color:black;
+    font-size:20px;
+    border:1px solid black;
+    margin-left:10%;
+    text-decoration: none;
+}
+.download:hover{
+    background-color: black;
+    color:white !important;
+    text-decoration: none;
+}
+.download:visited,.download:active{
+    border:1px solid black;
+    color:black;
+}
+#resume-links{
+    margin:auto; 
+    width:250px;
+    margin-top:20px;
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+/*CONTACT SECTION*/
+#contact{
+   /* background-color: #E8E8E8;*/
+   background-color: white;
+    color:black;
+}
+#contact-info-header{
+    text-align: center;
+    margin-bottom:50px;
+    font-family: 'Kaushan Script', cursive;
+
+}
+#contact-info{
+    margin-bottom:50px;
+    transition: opacity 2.4s,transform 2.4s;
+
+}
+#form,#form h2,#form small{
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+}
+#form-headers h3,#form-headers small{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+/* to make dashes into solid dashes*/
+.dash{
+    letter-spacing: -5px;
+}
+/*animate the width of the form inputs*/
+#form h3{
+    text-align: center;
+
+}
+#form h1{
+    text-align: center;
+}
+#contact input{
+    border:1px solid black;
+    padding-left:5px;
+
+}
+textarea{
+    border:1px solid black;
+    padding-left:5px;
+}
+
+#contact h2 small, #contact h2{
+    color:black;
+
+}
+#required-header{
+    color:red;
+    font-size:20px;
+}
+.required{
+    color:red;
+    font-size:20px;
+}
+
+#character_count{
+    margin-top:-5px;
+}
+#character_count {
+    color:red;
+}
+#submit-button{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-left:10px;
+    font-family: 'Quicksand', sans-serif !important;
+    background-color: white;
+    color:black;
+    font-size:20px; 
+    border:1px solid black;
+    margin-left:10%;
+    text-decoration: none;
+}
+#submit-button:hover{
+    color:white;
+    background-color: black;
+}
+#submitted
+{
+    text-align: center;
+}
+.error{
+    color:red;
+    font-size: 20px;
+    margin-right:5%;
+}
+
+/*FOOTER*/
+#footer{
+    text-align: center;
+    height:auto;
+    background-color: black;
+    margin:0;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#footer h4{
+    color:white;
+    font-family: 'Quicksand', sans-serif;
+
+}
+/*CSS for phones*/
+@media screen and (min-width: 0px)
+{
+    .modal-content
+    {
+        width:90%;
+        padding:10px;
+        margin:auto;
+        background-color: black;
+    }
+    #LematWorks, #myModal h1 a{
+        font-size:15px !important;
+    }
+    #myModal h1{
+        font-size:20px;
+    }
+    h1{
+        font-size:30px;
+    }
+    h2{
+        font-size:25px;
+    }
+    h3
+    {
+        font-size:20px;
+    }
+    p, ul,a{
+        font-size:13px;
+    }
+    #AI-pic{
+        height:200px;
+        width:200px;
+    }
+    #AI-speech{
+    }
+    #my-skills img{
+        position:relative;
+        left:40%;
+    }
+    .skills{
+        min-height:auto;
+    }
+    #education-skills,#circuit-skills{
+        margin-left:0%;
+    }
+    #education-skills{
+        padding-right:0%;
+    }
+    #management-skills,#analysis-skills{
+        margin-left:0%;
+    }
+    #my-skills i
+    {
+        font-size:75px;
+        position:relative;
+        left:40%;
+    }
+     .scotia-icons{
+        margin-left:30%;
+        width:125px;
+        height:125px;
+    }
+     #agile-icon{
+        width:130px;
+        height:140px;
+    }
+    #team-photos .col-sm-3{
+        width:100%;
+    }
+    #ginu,#agam,#sarthak,#jude
+    {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    
+        margin:0;
+        border:1px solid gray;
+        padding:0;
+        height:auto;
+        min-height:550px;
+        margin-bottom:5px;
+    }
+    .team-member-name, .team-member-position,.team-member-school,.team-member-degree{
+        text-align: center;
+        padding-bottom:20px;
+        color:black !important;
+        font-family: 'Quicksand', sans-serif;
+    }
+    #contact-info i
+    {
+        font-size:40px;
+        color:white;
+        background-color: black;
+        border-radius: 50%;
+        padding:10px;
+        position:relative;
+        left:40%;
+        margin-bottom:5px;
+    }
+    #contact-info p{
+        position:relative;
+        text-align: center;
+        margin-bottom:20px;
+    }
+    #linkedin p{
+        position:absolute;
+        left:42%;
+        text-align: left;
+    }
+    #form h2{
+        font-size:20px;
+    }
+    #form .error{
+        font-size:14px;
+    }
+    #contact input{
+        width:100%;
+    }
+    #commentsInput{
+        height:200px;
+        width:100%;
+    }
+    #form input[type="submit"]{
+        margin-bottom:10px;
+        width:150px;
+    }
+    .error
+    {
+        display:inherit;
+    }   
+
+}
+@media screen and (min-width:400px)
+{
+    #team-photos .col-sm-3
+    {
+        width:50%;
+    }  
+}
+/*CSS for tablets*/
+@media screen and (min-width: 768px)
+{
+    #AI-pic{
+        height:400px;
+        width:400px;
+    }
+    #myModal h1{
+        font-size:30px;
+    }
+     #LematWorks, #myModal h1 a{
+        font-size:18px !important;
+    }
+    .modal-content
+    {
+        width:40%;
+        margin:auto;
+    }
+    .modal-content input[type="text"]
+    {
+        width:90%;
+    }
+    .modal-content input[type="password"]
+    {
+        width:90%;
+    }
+    .modal-content input[type="submit"]
+    {
+        width:90%;
+    }
+    .modal-errors{
+        font-size:15px;
+        color:red;
+        font-family: 'Quicksand', sans-serif;
+    }
+    h1{
+        font-size:35px;
+    }
+    h2{
+        font-size:30px;
+    }
+    h3
+    {
+        font-size:25px; 
+    }
+    p, ul,a{
+        font-size:15px;
+    }
+    #agile-icon{
+        width:130px;
+        height:130px;
+    }
+     .scotia-icons{
+        margin-left:0%;
+        width:120px;
+        height:120px;
+    }
+    #team-photos .col-sm-3
+    {
+        width:50%;
+    } 
+    #my-skills i{
+    font-size:75px;
+    position:relative;
+    left:35%;
+    }
+    #my-skills img{
+        position:relative;
+        left:35%;
+    }
+    #my-skills p{
+        padding-top:25px;
+    }
+    .skills{
+        min-height:250px;
+    }
+    #education-skills,#circuit-skills{
+        margin-left:4%;
+    }
+    #education-skills{
+        padding-right:5%;
+    }
+    #management-skills,#analysis-skills{
+        margin-left:5%;
+    }
+
+    #team-photos .col-sm-3
+    {
+        width:48%;
+    }
+    #contact-info i
+    {
+        font-size:40px;
+        padding:13px;
+        position:relative;
+        left:42%;
+        margin-bottom:5px;
+    }
+    #contact-info p{
+        position:relative;
+        text-align: center;
+        margin-bottom:20px;
+    }
+    #linkedin p{
+        position:absolute;
+        left:42%;
+        text-align: left;
+    }
+    #form h2{
+        font-size:25px;
+    }
+    #name{
+        position:relative;
+        left:200px;
+    }
+    #name-header{
+        padding-right:49px;
+    }
+    #email-header{
+        padding-right:47px;
+    }
+    #company-header{
+        padding-right:33px;
+    }
+    #comments-header{
+        padding-right:13px;
+        position:relative;
+        bottom:85px;
+        margin-top:110px;
+    }
+    #ginu,#agam,#sarthak,#jude
+    {
+        margin-left:0.5%;
+    }
+    #jude{
+        margin-left:0.5%;
+    }
+    #sarthak{
+        margin-right:3px;
+    }
+    #form h2{
+        margin-left: 10%;
+    }
+    #form small{
+        margin-left:67%;
+        font-size:15px;
+    }
+    #contact input{
+        width:40%;
+    }
+    #contact textarea{
+        width:40%;
+    }
+    #form input[type="submit"]{
+        margin-left:60%;
+        width:250px;
+    }
+    .error
+    {
+        display:inline-block;
+    }
+
+}
+/*CSS for laptops*/
+@media screen and (min-width:992px)
+{
+    .modal-content
+    {
+        width:30%;
+        margin:auto;
+       
+    }
+    h1{
+        font-size:35px;
+    }
+    h2{
+        font-size:30px;
+    }
+    h3
+    {
+        font-size:25px;
+    }
+    p, ul,a{
+        font-size:15px;
+    }
+    /*this icon needs an increase*/
+     #agile-icon{
+        width:160px;
+        height:160px;
+    }
+    .scotia-icons{
+        margin-left:0%;
+        width:140px;
+        height:140px;
+    }
+    input[type="submit"]{
+        margin-left: 20%;
+    }
+    #form h2{
+        margin-left: 20%;
+    }
+    #team-photos .col-sm-3
+    {
+        width:24%;
+    }
+
+}
+/*CSS for desktops*/
+@media screen and (min-width:1200px)
+{
+    p, ul,a{
+        font-size:19px;
+    }
+}   

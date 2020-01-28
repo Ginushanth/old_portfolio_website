@@ -1,0 +1,688 @@
+
+@media screen and (min-width:0px)
+{
+	/*GENERAL CSS THAT MAY APPLY TO VARIOUS HTML*/
+	body,html
+	{
+	    height:100%;
+	    width:100%;
+	    background-color: white;
+	}
+	h3{
+		font-family: 'Quicksand', sans-serif;
+		font-size:15px;
+	}
+	.red{
+		color:red;
+	}
+	.heading{
+		margin-top:40px;
+		margin-bottom:50px;
+	}
+	.text-center{
+		text-align: center;
+		font-family: 'Cabin', sans-serif;
+	}
+	.white{
+		background-color: white;
+	}
+	/*navigation*/
+	#navigation{
+		background-color: #17252A;
+		padding-top:5px;
+	}
+	#navigation button{
+		background-color: #3AAFA9;
+	}
+	#nav-logo{
+		position:relative;
+		left:10%;
+	}
+	#navigation li a{
+		color:#DEF2F1;
+		font-family: 'Montserrat', sans-serif; 
+
+	}
+	#navigation li a:hover{
+		color:#17252A; 
+		background-color: #DEF2F1;
+	}
+	.icon-bar, .button{
+		color:#FEFFFF;
+		border-color: #FEFFFF;
+	}
+	/*intro section CSS*/
+	#intro img{
+		height:100%;
+		width:100%;
+
+	}
+	#intro{
+		height:90%;
+		background-size: cover !important;
+
+	}
+	#intro h1{
+		font-family: 'Montserrat', sans-serif; 
+		color:#FEFFFF;
+		vertical-align: middle;
+		text-align: center;
+		position:relative;
+		top:40%;
+		color:#FEFFFF;
+	}
+	/*Workshop section CSS*/
+	#workshop-button{
+		color:#17252A; 
+		background-color: #DEF2F1;
+	}
+	#workshop-button:hover{
+		color:#DEF2F1; 
+		background-color: #17252A;
+		
+	}
+	.button{
+		font-family: 'Montserrat', sans-serif; 
+		width:210px;
+		text-align: center;
+		font-size: 15px;
+		padding:15px;
+		cursor:pointer;
+		margin:auto;
+	}
+	#workshops-heading{
+		background-color: #3AAFA9;
+		height:auto;
+		padding-bottom:20px;
+	}
+	#workshops-heading h1{
+		color:#FEFFFF;
+
+	}
+	#workshop-quote{
+		margin:auto;
+		margin-bottom:50px;
+		color:#FEFFFF;
+	}
+	/* workshop AND events modal, both have the exact same css */
+	.modal{
+	    display:block;
+	    background-color: rgb(0,0,0); /* Fallback color */
+	    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	    position:fixed;
+	    padding-top:5%;
+	}
+	
+	.close {
+	    color: black;
+	    float: right;
+	    font-size: 28px;
+	    font-weight: bold;
+	    padding-right:10px;
+	    padding-top:10px;
+	}
+
+	.close:hover,.close:focus {
+	    color: black;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+	.modal-content{
+		width:80%;
+		margin:auto;
+	    transition:0.4s;
+	    min-height:auto;
+	    height:80%;
+	    color:black !important;
+	    border:1px solid white;
+
+	}
+	#event-modal-title,#workshops-modal-title{
+		text-align: center;
+		font-weight: bold;
+	}
+	#myModal, #myModal2{
+	    display:none;
+	    min-height:auto;
+	    height:100%;
+
+	}
+	.container-div{
+		min-height: auto;
+		position:relative;
+		height:85%;
+		color:black;
+	    font-family: 'Nunito', sans-serif;
+	    width:90%;
+	    margin-left:5%;
+	    overflow-y: auto;
+	}
+	.container-div .row{
+		padding-left:1%;
+	}
+	.container-div .row:hover{
+		background-color: #EDFDF9;
+	}
+	.read-more-container{
+		margin-top:12px;
+	}
+	.read-more, .read-more:visited, .read-more:hover, .read-more:active{
+		background-color: #17252A;
+		padding:10px 10px;
+		font-size:8px;
+		text-decoration: none !important;
+		font-family: 'Quicksand', sans-serif !important;
+		font-weight: bold;
+		color:#FEFFFF;
+		cursor:pointer;
+	}
+	.event-description{
+		display:inline-block; 
+		margin:0; 
+		position: relative;
+		vertical-align: top; 
+		width:100%;
+		font-size:10px;
+		padding-top:5px;
+	}
+	.event-hr{
+		border-color: #17252A;
+		width:100%;
+	}
+	.event-workshop-photo{
+		width:100%;
+		height:40%;
+	}
+	
+	/*Tablet CSS*/
+	/*This will make the tablet have half of it's background color #3AAFA9*/
+	#background{
+		position:relative;
+		width:100%; 
+		margin:0; 
+		padding:0;
+		background-color: #3AAFA9;
+		z-index: 0;
+	}
+	#container{
+
+		position: relative;
+		width: 100%;
+		padding-top:50%;
+		z-index: 1;
+	}
+	#tablet{
+		border:2px solid black; 
+		border-radius: 30px; 
+		background-color: black;
+		position:  absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+
+	}
+
+	#tablet-screen{
+		width:92%; 
+		border:1px solid black; 
+		height:98%; 
+		border-radius: 5px;
+		margin-top:0.5%; 
+		margin-left:6%;
+		margin-right:2%; 
+		background-color: #272822;
+
+	}
+	#tablet-screen-content{
+		position: relative;
+		top:-35%;
+		left:2%;
+	}
+	#screen-text{
+		font-size:2vw;
+		font-family: 'Ubuntu Mono', monospace;
+		width:80%;
+		overflow-y:hidden;
+		color:white;
+	}
+	#power-button{
+		visibility: hidden;
+		background-color: #1C1A1A;
+		border:1px solid gray; 
+		border-radius: 50%;  
+		position:relative;
+	}
+	#power-button:hover{
+		background-color: white;
+	}
+	#run-button{
+		cursor:pointer;
+		background-color: #FFE792;
+		color:#272822;
+		width:auto;
+		padding:0px 15px;
+		position:absolute;
+		font-family: 'Ubuntu Mono', monospace;
+		bottom:5%;
+		right:10%;
+		display:none;
+		transition: box-shadow 0.5s;
+	}
+	#run-button:hover{
+		cursor:pointer;
+	}
+	#gif{
+		display:none;
+		position:absolute;
+	}
+	#horizontal-line{
+		border:1px solid white;
+		position:relative;
+		top:25%;
+		left:102%;
+		width:0;
+		height:30%;
+	}
+	/*Networking section*/
+	#network{
+		min-height:600px;
+		height:auto;
+		margin-bottom:50px;
+	}
+	div #img-networking{
+		height:500px;
+		background-repeat: no-repeat;
+		background:cover !important; 
+		background-size: 100% 100% !important;
+	}
+	#img-networking img{
+		width:100%;
+		height:80%;
+	}
+	#events-button{
+		background-color:#17252A; 
+		color: #DEF2F1;
+		margin:0;
+		margin-top:50px;
+		margin-bottom:30px;
+	}
+	#events-button:hover{
+		color:#17252A; 
+		background-color: #DEF2F1;
+	}
+	/*---------About us section--------*/
+	#about-us{
+		height:auto;
+		padding-bottom:30px;
+		background-color:#17252A; 
+		color: #DEF2F1;
+	}
+	.who-we-are{
+		width:90%;
+		font-size:15px;
+		height:auto;
+		margin:auto;
+		text-align: center;
+		word-spacing: 2px;
+		font-family: 'Quicksand', sans-serif;
+	}
+	.xs-12{ /*Different from bootstrap grid layout*/
+		width:100%;
+		margin-bottom:10px;
+	}
+	.card{
+
+		height:410px;
+		box-shadow: 0 4px 10px 0 black !important;
+		background-color: #2B7A78;
+
+	}
+	#photos{
+		margin-top:100px;
+		width:95%;
+		margin-left:2%;
+	}
+	.card:hover .exec-photos{
+		opacity:0.1;
+	}
+	.card:hover .quote{
+		opacity:1;
+	}
+	.quote{
+		transition: .5s ease;
+		opacity: 0;
+		position: relative;
+		top:-95%;
+		left:5%;
+		font-size:12px;
+		width:90%;
+
+		color:#FEFFFF;
+
+	}
+	#photos div{
+
+	}
+	.exec-photos{
+		width:95%;
+		margin-left:2.5%;
+		margin-top:2.5%;
+		height:85%;
+		overflow:hidden;
+		opacity:1;
+		transition: .5s ease;
+	}
+	.card-hr{
+		margin-top:2px; 
+		margin-bottom:0; 
+		padding-bottom:2px;
+		border-color:#2B7A78;
+	}
+	.exec-title{
+		margin-top:0;
+		text-align: center;
+		padding-top:1%;
+		color:#FEFFFF;
+	}
+	/*Contact-us section*/
+	#contact-us{
+		height:auto;
+		min-height:400px;
+		background-color: #DEF2F1;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact-us h3{
+		font-size:15px;
+		color:#17252A;
+		margin-bottom:50px;
+		margin-left:auto;
+		margin-right:auto;
+		min-height:auto;
+		width:100%;
+		padding-left:5%;
+		padding-right:5%;
+	}
+	#social-media{
+		margin:auto;
+		height:auto;
+		position:relative;
+		text-align: center;
+	}
+	/*icons*/
+	i{
+		border-radius: 50%;
+		background-color: #17252A;
+		width:50px;
+		height:50px;
+		margin-right:10px;
+	}
+	i:hover{
+		background-color: #3AAFA9;
+	}
+	i p{
+		text-align: center;
+		font-size:30px;
+		position:relative;
+		top:20%;
+		
+	}
+	i p a:link, i p a:visited{
+		color:#FEFFFF;
+		text-decoration: none;
+	}
+	i p a:hover{
+		text-decoration: none;
+		cursor: pointer;
+		color: #17252A;
+	}
+	/*footer*/
+	#footer{
+		padding:0;
+		text-align: center;
+		background-color: #DEF2f1
+		width:100%;
+	}
+	#footer h3{
+		font-size:12px !important;
+		width:100%;
+		margin-top:70px;
+	}
+	
+/*This is used to make the profile cards visually appealing in certain widths*/
+@media screen and (min-width:500px) and (max-width:767px)
+{
+	.button{
+		width:210px;
+		font-size: 18px;
+		padding:15px;
+	}
+	#screen-text{
+		font-size:2vw;
+	}
+	h3{
+		font-size:18px;
+	}
+	.event-workshop-photo{
+		width:50%;
+		height:20%;
+	}
+	.event-description{
+		width:45%;
+		padding-left:1%;
+		padding-top:0;
+	}
+	#heading-network h3{
+		font-size:18px;
+	}
+
+	#img-networking img{
+		width:100%;
+		height:100%;
+	}
+	.who-we-are{
+		width:90%;
+		font-size:18px;
+		text-align: center;
+	}
+	.semi-small-6{
+		width:48%;
+		margin-left:1%;
+		margin-right:1%;
+		float:left;
+	}
+	#contact-us h3{
+		font-size:18px;
+		width:90%;
+	}
+}
+
+@media screen and (min-width: 768px)
+{
+	p{
+		font-size:20px;
+	}
+	
+	h3{
+		font-size:18px;
+	}
+	
+	h1{
+		font-size: 38px;
+	}
+
+	#navigation{
+		height:60px;
+	}
+	#nav-logo{
+		position:absolute;
+		left:20%;
+	}
+	#myNavbar{
+		position:relative;
+		float:right;
+		right:20%;
+	}
+	.mini-hr{
+    	width:25%;
+    	margin-top:-30px;
+    	margin-bottom:40px;
+    	border-color: white;
+	}
+	.button{
+		width:230px;
+		font-size: 20px;
+		padding:15px;
+	}
+	#workshop-quote{
+		width:70%;
+		font-size: 22px;
+	}
+	.event-workshop-photo{
+		width:50%;
+		height:20%;
+	}
+	.event-description{ 
+		width:45%;
+		padding-left:1%;
+		padding-top:0px;
+		font-size:10px;
+	}
+	.read-more, .read-more:visited, .read-more:hover, .read-more:active{
+		padding:10px 15px;
+		font-size:10px;
+	}
+	.modal-content
+    {
+        width:50%;
+        margin:auto;
+    }
+	#container{
+		padding-top:25%;
+	}
+	#tablet{
+		border:2px solid black; 
+		border-radius: 30px; 
+		background-color: black;
+		margin-left:25%;
+	}
+	#screen-text{
+		font-size:10px;
+	}
+	#heading-networking{
+		margin-left:8%;
+	}
+	#heading-networking h3{
+		font-size:20px;
+	}
+	#img-networking{
+		margin-top:-70px;
+	}
+	#img-networking img{
+		width:100%;
+		height:100%;
+	}
+	.who-we-are{
+		width:80%;
+		font-size:18px;
+		text-align: center;
+	}
+	#president{
+		margin-left:35% !important;
+		margin-right:35% !important;
+	}
+	.margin-sm{
+		margin-left:3% !important;
+	}
+	.sm-4{
+		width:30%;
+		float:left;
+		margin-left:1%;
+		margin-right:1%;
+	}
+	#contact-us h3{
+		font-size:20px;
+		width:90%;
+	}
+	i{
+		width:70px;
+		height:70px;
+	}
+	i p{
+		font-size:40px;
+		top:20%;
+	}
+
+}
+@media screen and (min-width:992px)
+{
+
+	.button{
+		width:330px;
+		padding:20px;
+		font-size: 27px;
+	}
+	h1{
+		font-size: 45px;
+	}
+	#img-networking img{
+		width:90%;
+		height:100%;
+	}
+	.who-we-are{
+		width:70%;
+		font-size:18px;
+		height:auto;
+		margin:auto;
+		text-align: center;
+		word-spacing: 2px;
+		font-family: 'Quicksand', sans-serif;
+	}
+	.event-description{ 
+		font-size:12px;
+	}
+	.read-more, .read-more:visited, .read-more:hover, .read-more:active{
+		padding:10px 15px;
+		font-size:12px;
+	}
+}
+/*This is used to make the profile cards visually appealing in certain widths*/
+@media screen and (min-width:1300px)
+{
+	#screen-text{
+		font-size:17px;
+	}
+	.lg-2{
+		width:18%;
+		float:left;
+		margin-left:0.5% !important;
+		margin-right:0.5% !important;
+	
+	}
+	#img-networking img{
+		width:80%;
+		height:100%;
+	}
+	#president{
+		margin-left:3% !important;
+		margin-right:0.5% !important;
+	}
+
+	.margin-lg{
+		margin-left:3% !important;
+	}
+	.event-description{ 
+		font-size:15px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
